@@ -12,8 +12,7 @@ function App() {
     <div className="App">
       <Navbar />  {/* Render the Navbar */}
       
-      <div className="content">
-     </div>
+      
       <AboutUs/>
 
       <ContactForm />
