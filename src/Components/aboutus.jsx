@@ -1,13 +1,12 @@
 import React from 'react';
 import './AboutUs.css';
-import Fade from 'react-reveal/Fade';
 
-const ObjectiveComponent = () => {
-  const objectives = [
+const aboutComponent = () => {
+  const abouts = [
     {
       title: 'Our Mission',
       description:
-        'Welcome to our Surveillance System platform! We are dedicated to providing cutting-edge security solutions that ensure the safety and privacy of individuals and organizations. Our advanced anomaly detection system uses GANs (Generative Adversarial Networks) to identify unusual patterns in surveillance footage, enabling real-time alerts and improving the overall security infrastructure..',
+        'NovaWatch We are dedicated to providing cutting-edge security solutions that ensure the safety and privacy of individuals and organizations. Our advanced anomaly detection system uses GANs (Generative Adversarial Networks) to identify unusual patterns in surveillance footage, enabling real-time abouts and improving the overall security infrastructure..',
     },
     {
       title: 'Privacy and Security',
@@ -22,20 +21,20 @@ const ObjectiveComponent = () => {
   ];
 
   return (
-    <div className="objective-container" id='objectives'>
-        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}>Objectives</h1>
-        <Fade bottom>
+    <div className="about-container" id='abouts'>
+        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}>About Us</h1>
+        
           <div className="cards-container">
-              {objectives.map((objective, index) => (
+              {abouts.map((about, index) => (
                 <div className="card" key={index}>
-                  <h2 style={{'fontSize':'1.4rem'}}>{objective.title}</h2>
-                  <p style={{'fontSize':'1.1rem'}}>{objective.description}</p>
+                  <h2 style={{'fontSize':'1.4rem'}}>{about.title}</h2>
+                  <p style={{'fontSize':'1.1rem'}}>{about.description}</p>
                 </div>
               ))}
           </div>
-        </Fade>
+        
     </div>
   );
 };
 
-export default ObjectiveComponent;
+export default aboutComponent;

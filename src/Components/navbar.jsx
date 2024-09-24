@@ -1,30 +1,98 @@
-// src/components/Navbar.js
-import React from 'react';
-import './Navbar.css';
-import Profileimage from '../assests/profile.png'
+import React, { useState } from "react";
+import NovaWatchimage from '../assests/download.svg'
+import "./Navbar.css";
+import { Link as ScrollLink } from 'react-scroll';
+function Navbar() {
+  const [activeSection, setActiveSection] = useState("home");
+  const handleSetActive = (to) => {
+    setActiveSection(to);
+  };
 
-const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <a href="/">NovaWatch</a>
-      </div>
-      
-      <ul className="navbar-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/dashboard">Dashboard</a></li>
-        <li><a href="/alerts">Alerts</a></li>
-        <li><a href="/settings">Settings</a></li>
-      </ul>
-
-      <div className="navbar-profile">
-        <button className="profile-btn">
-          <img src={Profileimage} alt="Profile" />
-          
-        </button>
-      </div>
-    </nav>
+    <>
+      <header className="header">
+        <ScrollLink
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onSetActive={handleSetActive}
+        >
+          <img src={NovaWatchimage} alt="logo" className="logo" />
+        </ScrollLink>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn"><span className="nav-icon"></span></label>
+        <ul className="menu">
+          <li>
+            <ScrollLink
+              to="Home"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={500}
+              onSetActive={handleSetActive}
+              style={{ color: activeSection === "home" ? "#0077ff" : "#4fa9f2" }}
+            >
+              Home
+            </ScrollLink>
+          </li>
+          <li >
+            <ScrollLink
+              to="abouts"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              onSetActive={handleSetActive}
+              style={{ color: activeSection === "objectives" ? "#0077ff" : "#4fa9f2" }}
+            >
+              About Us
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="Alerts"
+              spy={true}
+              smooth={true}
+              offset={-180}
+              duration={500}
+              onSetActive={handleSetActive}
+              style={{ color: activeSection === "events" ? "#0077ff" : "#4fa9f2" }}
+            >
+              Alerts
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={500}
+              onSetActive={handleSetActive}
+              style={{ color: activeSection === "team" ? "#0077ff" : "#4fa9f2" }}
+            >
+              Contact Us
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="Settings"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={500}
+              onSetActive={handleSetActive}
+              style={{ color: activeSection === "contact" ? "#0077ff" : "#4fa9f2" }}
+            >
+              Settings
+            </ScrollLink>
+          </li>
+        </ul>
+      </header>
+    </>
   );
-};
+}
 
 export default Navbar;
