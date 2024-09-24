@@ -1,89 +1,76 @@
-// src/components/ContactForm/ContactForm.jsx
 import React, { useState } from 'react';
-import './contact.css';
+import './contact.css'; 
 
-const ContactForm = () => {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phoneNumber: '',
+    subject: '',
     message: '',
   });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formStatus, setFormStatus] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Example POST request (replace URL with your backend endpoint)
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setFormStatus('Thank you for your message! We will get back to you soon.');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setFormStatus('There was an error. Please try again later.');
-      }
-    } catch (error) {
-      setFormStatus('There was an error. Please try again later.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission here (e.g., send data to a server)
+  //   console.log(formData);
+  // };
 
   return (
-    <div className="contact-form-container">
-      <h2 className ="contact-heading">Contact Us</h2>
-      <form onSubmit={handleSubmit} className="contact-form">
-        <label htmlFor="name">Name:</label>
+    <div className="contact-form-container" id='contact'>
+      <h2 className="center events-title" style={{'fontWeight':'500'}}><b>Contact Us</b></h2>
+      
+      <form className="form" action="" method="POST">
         <input
           type="text"
-          id="name"
           name="name"
+          placeholder="Name"
           value={formData.name}
           onChange={handleChange}
-          required
+          className="input-field"
         />
-
-        <label htmlFor="email">Email:</label>
+        <div className="inline-fields">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="input-field"
+          />
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            className="input-field"
+          />
+        </div>
         <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          value={formData.subject}
           onChange={handleChange}
-          required
+          className="input-field"
         />
-
-        <label htmlFor="message">Message:</label>
         <textarea
-          id="message"
           name="message"
+          placeholder="Message"
           value={formData.message}
           onChange={handleChange}
-          required
-        ></textarea>
-
-        <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Submitting...' : 'Submit'}
-        </button>
+          className="input-field"
+        />
+        <button type="submit" className="submit-button register">Submit</button>
       </form>
-      {formStatus && <p className="form-status">{formStatus}</p>}
     </div>
   );
-};
+}
 
 export default ContactForm;

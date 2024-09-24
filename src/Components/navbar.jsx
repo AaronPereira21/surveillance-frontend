@@ -1,12 +1,13 @@
 // src/components/Navbar.js
 import React from 'react';
 import './Navbar.css';
+import Profileimage from '../assests/profile.png'
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <a href="/">Surveillance System</a>
+        <a href="/">NovaWatch</a>
       </div>
       
       <ul className="navbar-links">
@@ -18,8 +19,8 @@ const Navbar = () => {
 
       <div className="navbar-profile">
         <button className="profile-btn">
-          <img src="https://via.placeholder.com/30" alt="Profile" />
-          Profile
+          <img src={Profileimage} alt="Profile" />
+          
         </button>
       </div>
     </nav>

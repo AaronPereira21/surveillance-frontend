@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from './Components/navbar';
 import Footer from './Components/footer';
 import ContactForm from './Components/contact';
+import AboutUs from './Components/aboutus';
 import './App.css';  // Import global styles
 
 function App() {
@@ -12,11 +13,9 @@ function App() {
       <Navbar />  {/* Render the Navbar */}
       
       <div className="content">
-        {/* Main content */}
-        <h1>Welcome to the Surveillance System</h1>
-        {/* Add other pages, components, or routes */}
+     </div>
+      <AboutUs/>
 
-      </div>
       <ContactForm />
       <Footer />  {/* Render the Footer */}
     </div>
