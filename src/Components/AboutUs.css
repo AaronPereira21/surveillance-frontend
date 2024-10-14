@@ -1,5 +1,5 @@
 .about-container {
-  background-color: #ddffe2f7;
+  background-color: #FFF5CD;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
   background-color: white;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 15px #FFF5CD;
   transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
   color: rgb(0, 0, 0);
@@ -37,12 +37,12 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 15px rgb(64, 111, 93);
+  box-shadow: 0px 8px 15px #443806;
 }
 
 .card h2 {
   font-size: 18px;
-  color: rgb(68, 215, 139);
+  color: #f1c721;
 }
 
 .card p {

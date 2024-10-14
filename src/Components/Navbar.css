@@ -1,5 +1,5 @@
 .header {
-  background-color: #e7effc;
+  background-color: #B7E0FF;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
  
   width: 100%;
@@ -12,7 +12,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #e7effc;
+  background-color: #B7E0FF;
 }
 
 .header li a{
