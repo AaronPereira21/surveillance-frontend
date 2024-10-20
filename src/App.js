@@ -10,13 +10,15 @@ import './App.css';  // Import global styles
 function App() {
   return (
     <div className="App">
-      <Navbar />  {/* Render the Navbar */}
+      <Navbar />  
       <HeroSection/>
       <AboutUs/>
       <ContactForm />
-      <Footer />  {/* Render the Footer */}
+      <Footer />  
     </div>
+   
   );
+
 }
 
 export default App;
