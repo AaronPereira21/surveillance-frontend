@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #FFCFB3;
+  background: linear-gradient(to right, #4A0072, #1E1A78);
 }
 
 .center {
@@ -22,8 +22,8 @@
 .input-field {
   border: none;
   border-radius: 5px;
-  color: #f7dfd2;
-  background-color: #f7dfd2;
+  color: #050404;
+  background-color: #e0e5ea;
   box-shadow: 0px 8px 15px rgba(132, 237, 255, 0.2);
   width: 100%;
   padding: 15px;
@@ -68,7 +68,7 @@
   }
 
   .contact-details {
-    color: #f7dfd2;
+    color: #e7efff;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -76,27 +76,27 @@
 }
 
 .submit-button {
-  background-color: #f16920;
-  color: #e7effc;
+  background-color: #216bda;
+  color: #fcede7;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   margin: 10px auto;
   display: block;
-  box-shadow: 0px 8px 15px rgba(141, 238, 255, 0.2);
+  box-shadow: 0px 8px 15px rgba(255, 177, 141, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .submit-button:hover {
   transform: translateY(-3px);
   transition: 0.4s ease;
-  background-color: #d3e4fe;
-  color: #2295f4;
+  background-color: #fedad3;
+  color: #050c0e;
 }
 
 .contact-details {
   display: flex;
-  color: darkblue;
+  color: black;
   justify-content: space-between;
   width: 100%;
   max-width: 50%;

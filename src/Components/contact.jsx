@@ -23,7 +23,7 @@ function ContactForm() {
 
   return (
     <div className="contact-form-container" id='contact'>
-      <h2 className="center events-title" style={{'fontWeight':'500'}}><b>Contact Us</b></h2>
+      <h1 className="center events-title" style={{'fontWeight':'500','fontSize':'2rem',color:'white'}}><b>Contact Us</b></h1>
       
       <form className="form" action="" method="POST">
         <input

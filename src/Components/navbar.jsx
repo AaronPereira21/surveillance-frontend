@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NovaWatchimage from '../assests/download.svg'
+// import NovaWatchimage from '../assests/download.svg'
 import "./Navbar.css";
 import { Link as ScrollLink } from 'react-scroll';
 function Navbar() {
@@ -19,7 +19,7 @@ function Navbar() {
           duration={500}
           onSetActive={handleSetActive}
         >
-          <img src={NovaWatchimage} alt="logo" className="logo" />
+          <h1 className="logo" > NOVAWATCH</h1>
         </ScrollLink>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn"><span className="nav-icon"></span></label>
@@ -32,7 +32,7 @@ function Navbar() {
               offset={-200}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "home" ? "#0077ff" : "#4fa9f2" }}
+              
             >
               Home
             </ScrollLink>
@@ -45,7 +45,7 @@ function Navbar() {
               offset={-150}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "objectives" ? "#0077ff" : "#4fa9f2" }}
+              
             >
               About Us
             </ScrollLink>
@@ -58,7 +58,7 @@ function Navbar() {
               offset={-180}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "events" ? "#0077ff" : "#4fa9f2" }}
+              
             >
               Alerts
             </ScrollLink>
@@ -71,7 +71,7 @@ function Navbar() {
               offset={-200}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "team" ? "#0077ff" : "#4fa9f2" }}
+              
             >
               Contact Us
             </ScrollLink>
@@ -84,7 +84,7 @@ function Navbar() {
               offset={-200}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "contact" ? "#0077ff" : "#4fa9f2" }}
+              
             >
               Settings
             </ScrollLink>

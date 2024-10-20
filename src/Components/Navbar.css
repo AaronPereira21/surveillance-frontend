@@ -1,5 +1,5 @@
 .header {
-  background-color: #B7E0FF;
+  background-color: #c7b7ff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
  
   width: 100%;
@@ -12,13 +12,13 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #B7E0FF;
+  background-color: #c7b7ff;
 }
 
 .header li a{
   display: block;
   padding: 20px 20px;
-  color: #4fa9f2;
+  color: #02080c;
   text-decoration: none;
 }
 
@@ -27,7 +27,7 @@
   cursor: pointer;
   transition: 0.4s ease;
   /* background-color: #d0e1fb; */
-  color: #0077ff;
+  color: #080808f3;
 }
 
 /* .active {
@@ -65,7 +65,7 @@
 }
 
 .header .menu-icon .nav-icon {
-  background: #1C5EAE;
+  background: #000000;
   display: block;
   height: 2px;
   position: relative;

@@ -22,7 +22,7 @@ const aboutComponent = () => {
 
   return (
     <div className="about-container" id='abouts'>
-        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}>About Us</h1>
+        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500,color:'white'}}>About Us</h1>
         
           <div className="cards-container">
               {abouts.map((about, index) => (

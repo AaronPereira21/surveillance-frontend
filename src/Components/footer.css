@@ -1,7 +1,8 @@
 /* src/components/Footer/Footer.css */
 
 .footer {
-    background-color: #FFB0B0;
+  background: linear-gradient(to right, #F5F7FA, #B5C99A);
+
     color: black;
     padding: 1.5rem 2rem;
     display: flex;
