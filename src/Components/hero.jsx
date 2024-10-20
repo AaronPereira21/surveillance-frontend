@@ -38,7 +38,7 @@ const HeroSection = () => {
     <div className="bg-animated min-h-screen flex items-center justify-center p-4 overflow-hidden">
       <div id="particles"></div>
       <div className="text-center z-10">
-        <h1 className="text-6xl font-bold mb-4 text-BLACK neon-text glitch hover-3d" data-text="NOWAWATCH">NOWAWATCH</h1>
+        <h1 className="text-6xl font-bold mb-4 text-BLACK neon-text glitch hover-3d" data-text="NOVAWATCH">NOVAWATCH</h1>
         <p className="text-xl text-cyan-300 mb-8">Safeguarding with smart anomaly alerts</p>
         
       </div>
