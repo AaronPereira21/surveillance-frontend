@@ -17,7 +17,7 @@
 
 .main-image {
   width:100%;/* Image will take at most 80% of the container's width */
-  height: 50rem; /* Maintain the aspect ratio of the image */
+  height: 50rem; 
   border-radius: 8px; /* Optional: Adds rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
   object-fit: cover; /* Ensures the image scales properly */

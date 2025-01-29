@@ -5,7 +5,7 @@ import Footer from './Components/footer';
 import ContactForm from './Components/contact';
 import AboutUs from './Components/aboutus';
 import HeroSection from './Components/hero';
-import './App.css';  // Import global styles
+import './App.css';  
 
 function App() {
   return (
@@ -16,7 +16,6 @@ function App() {
       <ContactForm />
       <Footer />  
     </div>
-   
   );
 
 }
